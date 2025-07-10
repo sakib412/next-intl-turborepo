@@ -1,6 +1,7 @@
 {
   "extends": "@repo/typescript-config/nextjs.json",
   "compilerOptions": {
+    "types": ["@repo/i18n/i18n.d.ts"],
     "plugins": [
       {
         "name": "next"
@@ -11,8 +12,9 @@
     "**/*.ts",
     "**/*.tsx",
     "next-env.d.ts",
-    "next.config.js",
-    ".next/types/**/*.ts"
+    "next.config.ts",
+    ".next/types/**/*.ts",
+    "i18m-env.d.ts",
   ],
   "exclude": [
     "node_modules"
